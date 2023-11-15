@@ -1,0 +1,178 @@
+body {
+	background-color: rgb(0, 100, 200);
+	width: 98vw;
+	height: 140vh;
+	margin: auto;
+}
+img {
+	position: absolute;
+	z-index: -1;
+	opacity: 45%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 98.7vw;
+	height: 154.3vh;
+}
+.title {
+	font-style: italic;
+	font-size: 3.5vw;
+}
+.description {
+	font-size: 2vw;
+	font-weight: bold;
+}
+.title, .description {
+	text-align: center;
+}
+fieldset {
+	border: 0 transparent;
+	margin-top: 8vh;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.left {
+	text-align: center;
+	margin-top: 3vh;
+}
+.right {
+	text-align: center;
+}
+.name input, .email input{
+	width: 25vw;
+	height: 6vh;
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+	border-radius: 0.5vw;
+	font-weight: bold;
+	font-size: calc(0.9vw + 0.9vh);
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.age input {
+	width: 18vw;
+	height: 6vh;
+	margin-top: 10vh;
+	border-radius: 0.5vw;
+	font-weight: bold;
+	font-size: calc(0.9vw + 0.9vh);
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.role select {
+	width: 25vw;
+	height: 4vh;
+	font-size: calc(0.9vw + 0.9vh);
+	font-weight: bold;
+	border-radius: 0.8vw;
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.dropdown {
+	margin-top: 1.7vh;
+}
+.name label,
+.email label,
+.age label,
+.role label,
+.recommendation span,
+.favourite_feature,
+.improvements span,
+.comments span {
+	font-size: calc(1.6vw + 1.6vh);
+}
+
+.recommendation {
+	margin-top: 3vh;
+}
+.recommendation input {
+	margin-left: 3vw;
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.choices {
+	margin-top: 3vh;
+	font-size: calc(1.2vw + 1.2vh);
+	font-weight: bold;
+}
+.favourite_feature {
+	margin-top: 4vh;
+}
+.favourites {
+	width: 25vw;
+	height: 4vh;
+	font-weight: bold;
+	border-radius: 0.8vw;
+	font-size: calc(0.9vw + 0.9vh);
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.improvements {
+	margin-top: 4vh;
+}
+.content {
+	width: 53vw;
+	text-align: left;
+	font-family: Verdana;
+}
+tr * {
+	padding-top: 1vh;
+	font-size: calc(0.9vw + 0.9vh);
+	font-weight: bold;
+}
+.comments {
+	margin-top: 4vh;
+}
+.comments textarea {
+	width: 30vw;
+	height: 20vh;
+	margin-top: 4vh;
+	border-radius: 0.8vh;
+	font-size: calc(0.8vw + 0.8vh);
+	font-weight: bold;
+	opacity: 60%;
+	border: trasparent;
+	transition: 1s;
+}
+.submit {
+	margin-left: 35vw;
+	margin-top: 6vh;
+	width: 25vw;
+	height: 7vh;
+	border-radius: 2vw;
+	background-color: black;
+	color: white;
+	transition: 1s;
+	font-size: calc(1.6vw + 1.6vh);
+	font-weight: bold;
+}
+.submit:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	font-weight: bold;
+	transform: scale(1.4);
+}
+input:focus, select:focus, textarea:focus {
+	opacity: 100%;
+	background-color: black;
+	color: white;
+}
+
+.name input:hover, .email input:hover, .age input:hover {
+	transform: translate(2vw, 0) scale(1.2);
+}
+
+.favourite_feature select:hover,
+.role select:hover,
+.comments textarea:hover {
+	transform: translate(0, 2vh) scale(1.3);
+}
