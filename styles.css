@@ -1,23 +1,24 @@
 body {
 	background-color: rgb(0, 100, 200);
-	width: 98vw;
-	height: 140vh;
-	margin: auto;
+	width: 100vw;
+	height: auto;
 }
+
 img {
-	position: absolute;
+	position: fixed;
 	z-index: -1;
 	opacity: 45%;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
-	width: 98.7vw;
-	height: 154.3vh;
+	width: 100vw;
+	height: autovh;
 }
+
 .title {
 	font-style: italic;
-	font-size: 3.5vw;
+	font-size: calc(2.8vw + 2.8vh);
 }
 .description {
 	font-size: 2vw;
@@ -30,9 +31,10 @@ fieldset {
 	border: 0 transparent;
 	margin-top: 8vh;
 }
-.container {
+.registration_form {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: auto auto;
+	grid-template-rows: auto;
 }
 .left {
 	text-align: center;
@@ -86,13 +88,14 @@ fieldset {
 .improvements span,
 .comments span {
 	font-size: calc(1.6vw + 1.6vh);
+	/* margin-left: 5vw; */
 }
 
 .recommendation {
 	margin-top: 3vh;
 }
 .recommendation input {
-	margin-left: 3vw;
+	/* padding-left: 13vw; new */
 	opacity: 60%;
 	border: trasparent;
 	transition: 1s;
@@ -109,7 +112,7 @@ fieldset {
 	width: 25vw;
 	height: 4vh;
 	font-weight: bold;
-	border-radius: 0.8vw;
+	border-radius: calc(1vw + 1vh);
 	font-size: calc(0.9vw + 0.9vh);
 	opacity: 60%;
 	border: trasparent;
